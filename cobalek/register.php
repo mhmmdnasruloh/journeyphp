@@ -25,11 +25,13 @@ if (isset($_POST['register'])) {
 </head>
 <body>
 
-<center><h2>Form register </h2><center>
+<div style="text-align: center">
+<h2>Form register </h2>
 <form method="post"> 
-    <center><input type= "text" name="username" placeholder="username" required><center> <br>
-    <center><input type= "text" name="password" placeholder="password" required><center> <br>
-    <center><button type= "submit" name="register"> register </button><center> <br>
+    <input type= "text" name="username" placeholder="username" required> <br>
+    <input type= "text" name="password" placeholder="password" required> <br>
+    <button type= "submit" name="register"> register </button> <br>
+</div>
 </form>
 </body>
 </html>

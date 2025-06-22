@@ -16,6 +16,8 @@
 
     <h1>belajar html walaupun muak 		&lt; HTML ANJAY &gt; </h1>
 
+    
+
     <h1>ini adalah paragraph </h1>
     <br>
      <br>
@@ -24,5 +26,10 @@
         <br>
         <hr> ini adalah garis
     <h1>bisa gak ya </h1>
+    <p><b>ini bolt,B</b> <i>ini miring i </i> <ins>ini garis bawa ins</ins>
+    </p>
+    <p>
+        2 <sup>2 ini adalah sup/pangkat</sup> = 2
+    </p>
 </body>
 </html>

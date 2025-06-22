@@ -32,12 +32,12 @@ if(isset($_POST['login'])){
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="text-align : center ">
 
 <h2>Form login </h2>
 <form method="post"> 
     <input type="text" name="username" placeholder="username" required> <br>
-    <input type="password" name ="password" placeholder="password" required> <br>
+    <input type="text" name ="password" placeholder="password" required> <br>
     <button type="submit" name="login"> login </button> <br>
 </form>
 
