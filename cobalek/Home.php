@@ -13,8 +13,9 @@ if(isset($_POST['login'])){
         $data=$result -> fetch_assoc () ;
         if ( password_verify($password,$data['password'])){
           $_SESSION['username'] =$username ;
-           header ("Location: halaman.php") ;
-            exit ;
+          echo"login berhasil" ;
+          // header ("Location: halaman.php") ;
+           // exit ;
         } else {
             echo"password salah";
         }
@@ -24,7 +25,6 @@ if(isset($_POST['login'])){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,10 +93,10 @@ if(isset($_POST['login'])){
 
   <div class="container">
     <h2>Login</h2>
-    <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
+    <form method="POST" action="">
+      <input type="text" name ="username" placeholder="Username" required>
+      <input type="password" name ="password"placeholder="Password" required>
+      <button type="submit"name="login">Login</button>
     </form>
     <div class="switch">
       Belum punya akun? <a href="register.php">Register</a>
