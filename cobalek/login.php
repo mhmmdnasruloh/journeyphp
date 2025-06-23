@@ -24,22 +24,3 @@ if(isset($_POST['login'])){
 }
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="text-align : center ">
-
-<h2>Form login </h2>
-<form method="post"> 
-    <input type="text" name="username" placeholder="username" required> <br>
-    <input type="text" name ="password" placeholder="password" required> <br>
-    <button type="submit" name="login"> login </button> <br>
-</form>
-
-</body>
-</html>

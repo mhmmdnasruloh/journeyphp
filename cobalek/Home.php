@@ -1,3 +1,30 @@
+<?php
+include 'db1.php' ;
+session_start () ;
+
+if(isset($_POST['login'])){
+    $username =$_POST ['username'];
+    $password =$_POST['password'];
+
+    $query ="SELECT * fROM users WHERE username='$username'";
+    $result =$conn -> query($query);
+
+    if ($result->num_rows === 1 ){
+        $data=$result -> fetch_assoc () ;
+        if ( password_verify($password,$data['password'])){
+          $_SESSION['username'] =$username ;
+           header ("Location: halaman.php") ;
+            exit ;
+        } else {
+            echo"password salah";
+        }
+    } else {
+        echo"user tidak di temukan";
+}
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +32,7 @@
   <title>Login/Register Box</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: arial, sans-serif;
       background-color: #f0f2f5;
       display: flex;
       justify-content: center;
