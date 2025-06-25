@@ -13,9 +13,8 @@ if(isset($_POST['login'])){
         $data=$result -> fetch_assoc () ;
         if ( password_verify($password,$data['password'])){
           $_SESSION['username'] =$username ;
-          echo"login berhasil" ;
-          // header ("Location: halaman.php") ;
-           // exit ;
+          header ("Location: halaman.php") ;
+          exit ;
         } else {
             echo"password salah";
         }

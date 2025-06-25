@@ -9,7 +9,6 @@ if (isset($_POST['register'])) {
     $sql="INSERT INTO users (username,password) VALUES ('$user', '$pass')";
     if($conn->query($sql)) {
         echo "register berhasil" ;
-        header("Location: Home.php") ;
         exit ;
     } else {
         echo "gagal : " . $conn->error ;
