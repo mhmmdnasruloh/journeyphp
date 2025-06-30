@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CUKURUKUK</title>
 </head>
 <body>
     <div class="absolute top-0 left-0 bg-gradient-to-br from-yellow-200 via-purple-800 to-blue-500 bottom-0 h-full w-full overflow-hidden"></div>
@@ -137,5 +137,7 @@
         </ul>
     </ol>
 </div>
+
+
 </body>
 </html>
