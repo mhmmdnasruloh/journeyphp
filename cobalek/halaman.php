@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CUKURUKUK</title>
 </head>
+<div>
+     <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+    <header>
+    <h1>Website Arul</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tentang</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+</div>
 <body>
     <div class="absolute top-0 left-0 bg-gradient-to-br from-yellow-200 via-purple-800 to-blue-500 bottom-0 h-full w-full overflow-hidden"></div>
     <div style="text-align : center ">
